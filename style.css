@@ -53,7 +53,7 @@ p {
     max-width: 600px;
 }
 
-#card {
+.card {
     border-radius: 8px;
     max-width: 350px;
     height: 250px;
@@ -64,19 +64,19 @@ p {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
 }
-.card1 {
+#card1 {
     box-shadow: 0px -3px 0.5px hsl(0, 78%, 62%), 0px 5px 20px hsl(0, 0%, 85%);
 }
 
-.card2 {
+#card2 {
     box-shadow: 0px -3px 0.5px hsl(34, 97%, 64%), 0px 5px 20px hsl(0, 0%, 85%);
 }
 
-.card3 {
+#card3 {
     box-shadow: 0px -3px 0.5px hsl(212, 86%, 64%), 0px 5px 20px hsl(0, 0%, 85%);
 }
 
-.card4 {
+#card4 {
     box-shadow: 0px -3px 0.5px hsl(180, 62%, 55%), 0px 5px 20px hsl(0, 0%, 85%);
 }
 
@@ -94,22 +94,22 @@ p {
         align-self: center;
     }
 
-    .card1 {
+    #card1 {
         grid-row: 2 / span 2;
         grid-column: 3 / span 1;
     }
 
-    .card2 {
+    #card2 {
         grid-row: 4 / span 2;
         grid-column: 3 / span 1;
     }
 
-    .card3 {
+    #card3 {
         grid-row: 3 / span 2;
         grid-column: 4 / span 1;
     }
 
-    .card4 {
+    #card4 {
         grid-row: 3 / span 2;
         grid-column: 2 / span 1;
     }
