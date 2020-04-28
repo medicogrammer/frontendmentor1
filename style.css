@@ -1,0 +1,117 @@
+body {
+    background-color: hsl(0, 0%, 98%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.image{
+    width: 60px;
+    height: 60px;
+    padding: 30px 5px 5px 220px;
+}
+
+h1 {
+    font-size: 1.3em;
+    color: hsl(234, 12%, 34%);
+}
+p {
+    text-align: center;
+    color: hsl(234, 12%, 34%);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.p1 {
+    font-weight: 300;
+    font-size: 35px;
+}
+.p2 {
+    font-weight: 600;
+    font-size: 35px;
+}
+.p3 {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(229, 6%, 66%);
+}
+
+.p4 {
+    font-size: 14px;
+    color: hsl(229, 6%, 66%);
+    text-align: left;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.container {
+    display: grid;
+    grid-auto-rows: minmax(125px, auto);
+    grid-gap: 0.5rem;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.header {
+    max-width: 600px;
+}
+
+#card {
+    border-radius: 8px;
+    max-width: 350px;
+    height: 250px;
+    justify-self: center;
+    background-color: white;
+    padding: 10px 30px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.card1 {
+    box-shadow: 0px -3px 0.5px hsl(0, 78%, 62%), 0px 5px 20px hsl(0, 0%, 85%);
+}
+
+.card2 {
+    box-shadow: 0px -3px 0.5px hsl(34, 97%, 64%), 0px 5px 20px hsl(0, 0%, 85%);
+}
+
+.card3 {
+    box-shadow: 0px -3px 0.5px hsl(212, 86%, 64%), 0px 5px 20px hsl(0, 0%, 85%);
+}
+
+.card4 {
+    box-shadow: 0px -3px 0.5px hsl(180, 62%, 55%), 0px 5px 20px hsl(0, 0%, 85%);
+}
+
+@media screen and (min-width: 40em){
+    .container{
+        grid-template-columns: auto 350px 350px 350px auto;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1.3fr;
+        grid-gap: 1.5rem;
+    }
+
+    .header {
+        grid-row: span 1;
+        grid-column: span 5;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .card1 {
+        grid-row: 2 / span 2;
+        grid-column: 3 / span 1;
+    }
+
+    .card2 {
+        grid-row: 4 / span 2;
+        grid-column: 3 / span 1;
+    }
+
+    .card3 {
+        grid-row: 3 / span 2;
+        grid-column: 4 / span 1;
+    }
+
+    .card4 {
+        grid-row: 3 / span 2;
+        grid-column: 2 / span 1;
+    }
+
+}
